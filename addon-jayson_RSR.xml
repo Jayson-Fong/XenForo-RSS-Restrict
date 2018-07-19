@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="jayson_RSR" title="[JF] RSS Restrict" version_string="1.0.0" version_id="1" url="https://jaysonfong.me/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="load_class_controller" execute_order="10" callback_class="jayson_RSR_Listener" callback_method="Listen" active="1" hint="XenForo_ControllerPublic_Forum" description=""/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="jayson_RSR" display_order="1" debug_only="0"/>
+    <option option_id="jayson_rsr_enable" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="jayson_RSR" display_order="110"/>
+    </option>
+    <option option_id="jayson_rsr_useragent" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="jayson_RSR" display_order="120"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="jayson_rsr_rss_disabled" version_id="1" version_string="1.0.0"><![CDATA[Sorry, the RSS feed is currently disabled. Please check back later.]]></phrase>
+    <phrase title="jayson_rsr_useragent_required" version_id="1" version_string="1.0.0"><![CDATA[A user-agent is required to access our board's RSS feed!]]></phrase>
+    <phrase title="option_group_jayson_RSR" version_id="1" version_string="1.0.0"><![CDATA[[JF] RSS Restrict]]></phrase>
+    <phrase title="option_group_jayson_RSR_description" version_id="1" version_string="1.0.0"><![CDATA[Options For [JF] RSS Restrict]]></phrase>
+    <phrase title="option_jayson_rsr_enable" version_id="1" version_string="1.0.0"><![CDATA[Disable RSS]]></phrase>
+    <phrase title="option_jayson_rsr_enable_explain" version_id="1" version_string="1.0.0"><![CDATA[Tick on to completely disable your board's RSS feed.]]></phrase>
+    <phrase title="option_jayson_rsr_useragent" version_id="1" version_string="1.0.0"><![CDATA[Require UserAgent]]></phrase>
+    <phrase title="option_jayson_rsr_useragent_explain" version_id="1" version_string="1.0.0"><![CDATA[Tick on to require the presentation of a user-agent while accessing your RSS feed if enabled.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
